@@ -1,7 +1,11 @@
+const { expect } = require('chai');
+
 require ( './helpers.js' );
 
 describe('index.js', function() {
   describe('distanceFromHqInBlocks()', function() {
+    function distanceFromHqInBlocks(someValue){
+    }
     it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
     });
@@ -17,7 +21,7 @@ describe('index.js', function() {
 
   describe('distanceFromHqInFeet()', function() {
     it('returns a distance in feet', function() {
-      expect(distanceFromHqInFeet(43)).to.equal(264);
+      expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
     });
 
     it('returns a distance in feet', function() {
